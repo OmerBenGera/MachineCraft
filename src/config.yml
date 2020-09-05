@@ -1,0 +1,55 @@
+##############################################
+##                                          ##
+##               machinecraft               ##
+##       Made with love by OmerBenGera      ##
+##                                          ##
+##############################################
+
+#Custom items section
+items:
+  mining_machine:
+    type: OBSERVER
+    name: '&6Mining Machine'
+    glow: true
+    lore:
+    - '&7Mines ores in chunk.'
+  farming_machine:
+    type: OBSERVER
+    name: '&6Farming Machine'
+    glow: true
+    lore:
+    - '&7Farms seeds in distance of 10 blocks.'
+  spawner_machine:
+    type: OBSERVER
+    name: '&6Spawner Machine'
+    glow: true
+    lore:
+    - '&7Breaks the spawner under it.'
+  recipe_pickaxe:
+    type: DIAMOND_PICKAXE
+    enchants:
+    - LOOT_BONUS_BLOCKS:3
+
+#Machines settings section
+machines:
+  mining_machine: #Do not change this
+    interval: 40 #Every 40 ticks (2 seconds) a new block will be mined
+    item: 'mining_machine'
+    recipe:
+    - 'COBBLESTONE, DIAMOND_ORE, COBBLESTONE'
+    - 'REDSTONE, OBSERVER, REDSTONE'
+    - 'COBBLESTONE, recipe_pickaxe, COBBLESTONE'
+  farming_machine: #Do not change this
+    interval: 24000 #Every 24000 ticks (20 minutes) the area will be harvested
+    durability: 1000
+    item: 'farming_machine'
+    recipe:
+    - 'COBBLESTONE, MILK_BUCKET, COBBLESTONE'
+    - 'REDSTONE, OBSERVER, REDSTONE'
+    - 'COBBLESTONE, DIAMOND_HOE, COBBLESTONE'
+  spawner_machine: #Do not change this
+    item: 'spawner_machine'
+    recipe:
+    - 'COBBLESTONE, NETHER_STAR, COBBLESTONE'
+    - 'REDSTONE, OBSERVER, REDSTONE'
+    - 'COBBLESTONE, DIAMOND_SWORD, COBBLESTONE'

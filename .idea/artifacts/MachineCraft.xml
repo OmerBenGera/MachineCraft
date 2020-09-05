@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MachineCraft">
+    <output-path>D:/My Servers/MachineCraft/plugins</output-path>
+    <root id="archive" name="MachineCraft.jar">
+      <element id="module-output" name="MachineCraft" />
+    </root>
+  </artifact>
+</component>
